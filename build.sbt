@@ -32,3 +32,5 @@ pomIncludeRepository := {
 seq(aetherPublishSettings: _*)
 
 testOptions in Test += Tests.Argument("junitxml")
+
+scalacOptions += "-Xcheck-null"
