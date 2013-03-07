@@ -1,0 +1,212 @@
+[info] Loading global plugins from /home/rintcius/.sbt/0.12.2/plugins
+[info] Loading project definition from /fast/dev/sandbox/scala/nl.rintcius.poc/project
+[info] Set current project to scala-stuff (in build file:/fast/dev/sandbox/scala/nl.rintcius.poc/)
+[info] Updating {file:/fast/dev/sandbox/scala/nl.rintcius.poc/}default-f38e93...
+[info] Resolving org.scala-lang#scala-library;2.10.0 ...
+[info] Resolving com.novocode#junit-interface;0.10-M1 ...
+[info] Resolving junit#junit-dep;4.10 ...
+[info] Resolving org.hamcrest#hamcrest-core;1.1 ...
+[info] Resolving org.scala-tools.testing#test-interface;0.5 ...
+[info] Resolving org.specs2#specs2_2.10;1.13 ...
+[info] Resolving org.specs2#scalaz-core_2.10;7.0.0 ...
+[info] Resolving org.specs2#scalaz-concurrent_2.10;7.0.0 ...
+[info] Resolving org.specs2#scalaz-effect_2.10;7.0.0 ...
+[info] Done updating.
+[success] Total time: 0 s, completed 07-Mar-2013 13:52:23
+[info] Compiling 2 Scala sources to /fast/dev/sandbox/scala/nl.rintcius.poc/target/scala-2.10/test-classes...
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:24: potential null pointer dereference: someVal.substring
+[warn]     println(someVal.substring(0, 3))
+[warn]                     ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:33: potential null pointer dereference: SimpleValInTraitSpec.this.described("A").should
+[warn]   "A" should {
+[warn]       ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:34: potential null pointer dereference: SimpleValInTraitSpec.this.inExample("A val").in
+[warn]     "A val" in {
+[warn]             ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:37: potential null pointer dereference: {
+[warn]   final class $anon extends A {
+[warn]     def <init>(): anonymous class $anon = {
+[warn]       $anon.super.<init>();
+[warn]       ()
+[warn]     };
+[warn]     private[this] val someVal: String = "value"
+[warn]   };
+[warn]   new $anon()
+[warn] }.aVal
+[warn]       }.aVal.substring(0, 3) must throwA[NullPointerException]
+[warn]         ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:37: potential null pointer dereference: {
+[warn]   final class $anon extends A {
+[warn]     def <init>(): anonymous class $anon = {
+[warn]       $anon.super.<init>();
+[warn]       ()
+[warn]     };
+[warn]     private[this] val someVal: String = "value"
+[warn]   };
+[warn]   new $anon()
+[warn] }.aVal.substring
+[warn]       }.aVal.substring(0, 3) must throwA[NullPointerException]
+[warn]              ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:37: potential null pointer dereference: SimpleValInTraitSpec.this.theValue[String]({
+[warn]   final class $anon extends Object with nl.rintcius.poc.SimpleValInTraitSpec.A {
+[warn]     def <init>(): anonymous class $anon = {
+[warn]       $anon.super.<init>();
+[warn]       ()
+[warn]     };
+[warn]     private[this] val someVal: String = "value";
+[warn]     <stable> <accessor> def someVal: String = $anon.this.someVal
+[warn]   };
+[warn]   new $anon()
+[warn] }.aVal.substring(0, 3)).must
+[warn]       }.aVal.substring(0, 3) must throwA[NullPointerException]
+[warn]                              ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:40: potential null pointer dereference: SimpleValInTraitSpec.this.inExample("A patch").in
+[warn]     "A patch" in {
+[warn]               ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:43: potential null pointer dereference: {
+[warn]   final class $anon extends A {
+[warn]     private[this] val someVal: String = _;
+[warn]     def <init>(): anonymous class $anon = {
+[warn]       val someVal: String = "value";
+[warn]       $anon.super.<init>();
+[warn]       ()
+[warn]     };
+[warn]     <empty>
+[warn]   };
+[warn]   new $anon()
+[warn] }.aVal
+[warn]       } with A {}.aVal.substring(0, 3) must_== "val"
+[warn]                   ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:43: potential null pointer dereference: {
+[warn]   final class $anon extends A {
+[warn]     private[this] val someVal: String = _;
+[warn]     def <init>(): anonymous class $anon = {
+[warn]       val someVal: String = "value";
+[warn]       $anon.super.<init>();
+[warn]       ()
+[warn]     };
+[warn]     <empty>
+[warn]   };
+[warn]   new $anon()
+[warn] }.aVal.substring
+[warn]       } with A {}.aVal.substring(0, 3) must_== "val"
+[warn]                        ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:43: potential null pointer dereference: SimpleValInTraitSpec.this.theValue[String]({
+[warn]   final class $anon extends Object with nl.rintcius.poc.SimpleValInTraitSpec.A {
+[warn]     private[this] val someVal: String = _;
+[warn]     <stable> <accessor> def someVal: String = $anon.this.someVal;
+[warn]     def <init>(): anonymous class $anon = {
+[warn]       val someVal: String = "value";
+[warn]       $anon.super.<init>();
+[warn]       ()
+[warn]     };
+[warn]     <empty>
+[warn]   };
+[warn]   new $anon()
+[warn] }.aVal.substring(0, 3)).must_==
+[warn]       } with A {}.aVal.substring(0, 3) must_== "val"
+[warn]                                        ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:47: potential null pointer dereference: SimpleValInTraitSpec.this.described("B").should
+[warn]   "B" should {
+[warn]       ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:48: potential null pointer dereference: SimpleValInTraitSpec.this.inExample("B lazyval").in
+[warn]     "B lazyval" in {
+[warn]                 ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:51: potential null pointer dereference: {
+[warn]   final class $anon extends B {
+[warn]     def <init>(): anonymous class $anon = {
+[warn]       $anon.super.<init>();
+[warn]       ()
+[warn]     };
+[warn]     private[this] val someVal: String = "value"
+[warn]   };
+[warn]   new $anon()
+[warn] }.aLazyVal
+[warn]       }.aLazyVal.substring(0, 3) must_== "val"
+[warn]         ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:51: potential null pointer dereference: {
+[warn]   final class $anon extends B {
+[warn]     def <init>(): anonymous class $anon = {
+[warn]       $anon.super.<init>();
+[warn]       ()
+[warn]     };
+[warn]     private[this] val someVal: String = "value"
+[warn]   };
+[warn]   new $anon()
+[warn] }.aLazyVal.substring
+[warn]       }.aLazyVal.substring(0, 3) must_== "val"
+[warn]                  ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:51: potential null pointer dereference: SimpleValInTraitSpec.this.theValue[String]({
+[warn]   final class $anon extends Object with nl.rintcius.poc.SimpleValInTraitSpec.B {
+[warn]     def <init>(): anonymous class $anon = {
+[warn]       $anon.super.<init>();
+[warn]       ()
+[warn]     };
+[warn]     private[this] val someVal: String = "value";
+[warn]     <stable> <accessor> def someVal: String = $anon.this.someVal
+[warn]   };
+[warn]   new $anon()
+[warn] }.aLazyVal.substring(0, 3)).must_==
+[warn]       }.aLazyVal.substring(0, 3) must_== "val"
+[warn]                                  ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:54: potential null pointer dereference: SimpleValInTraitSpec.this.inExample("B def").in
+[warn]     "B def" in {
+[warn]             ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:57: potential null pointer dereference: {
+[warn]   final class $anon extends B {
+[warn]     def <init>(): anonymous class $anon = {
+[warn]       $anon.super.<init>();
+[warn]       ()
+[warn]     };
+[warn]     private[this] val someVal: String = "value"
+[warn]   };
+[warn]   new $anon()
+[warn] }.aDef
+[warn]       }.aDef.substring(0, 3) must_== "val"
+[warn]         ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:57: potential null pointer dereference: {
+[warn]   final class $anon extends B {
+[warn]     def <init>(): anonymous class $anon = {
+[warn]       $anon.super.<init>();
+[warn]       ()
+[warn]     };
+[warn]     private[this] val someVal: String = "value"
+[warn]   };
+[warn]   new $anon()
+[warn] }.aDef.substring
+[warn]       }.aDef.substring(0, 3) must_== "val"
+[warn]              ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:57: potential null pointer dereference: SimpleValInTraitSpec.this.theValue[String]({
+[warn]   final class $anon extends Object with nl.rintcius.poc.SimpleValInTraitSpec.B {
+[warn]     def <init>(): anonymous class $anon = {
+[warn]       $anon.super.<init>();
+[warn]       ()
+[warn]     };
+[warn]     private[this] val someVal: String = "value";
+[warn]     <stable> <accessor> def someVal: String = $anon.this.someVal
+[warn]   };
+[warn]   new $anon()
+[warn] }.aDef.substring(0, 3)).must_==
+[warn]       }.aDef.substring(0, 3) must_== "val"
+[warn]                              ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:61: potential null pointer dereference: SimpleValInTraitSpec.this.described("C val").should
+[warn]   "C val" should {
+[warn]           ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:62: potential null pointer dereference: SimpleValInTraitSpec.this.inExample("C instantiate").in
+[warn]     "C instantiate" in {
+[warn]                     ^
+[warn] /fast/dev/sandbox/scala/nl.rintcius.poc/src/test/scala/nl/rintcius/poc/SimpleValInTraitSpec.scala:65: potential null pointer dereference: SimpleValInTraitSpec.this.theValue[nl.rintcius.poc.SimpleValInTraitSpec.C]({
+[warn]   final class $anon extends Object with nl.rintcius.poc.SimpleValInTraitSpec.C {
+[warn]     def <init>(): anonymous class $anon = {
+[warn]       $anon.super.<init>();
+[warn]       ()
+[warn]     };
+[warn]     private[this] val someVal: String = "value";
+[warn]     <stable> <accessor> def someVal: String = $anon.this.someVal
+[warn]   };
+[warn]   new $anon()
+[warn] }).must
+[warn]       } must throwA[NullPointerException]
+[warn]         ^
+[warn] 22 warnings found
+[success] Total time: 6 s, completed 07-Mar-2013 13:52:30
